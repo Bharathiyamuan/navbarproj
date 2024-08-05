@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <script src="https://kit.fontawesome.com/90e96d4409.js" crossorigin="anonymous"></script>
+
+    <div class="page">
+        <header>
+            <nav class="navbar">
+                <div class="logo">Cuisine Food</div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li class="dropdown">
+                        <a href="#menu" class="dropbtn">Menu</a>
+                        <div class="dropdown-content">
+                            <a href="#design">Indian Cuisine</a>
+                            <a href="#development">American Cuisine</a>
+                            <a href="#marketing">International Cuisine</a>
+                        </div>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="burger" id="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+        <section id="home">
+            <div class="home">
+                <div class="home-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPLQ9i1X198D-gV4O2gqov4rFjo-R6iywGZw&s"
+                        alt="" style="width: 600px;height: 400px;">
+                </div>
+                <div class="home-content">
+                    <h1>HOME</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sed esse tenetur mollitia
+                        voluptatum obcaecati dolores. Vel, quos libero? Nisi dolorum, enim sed tenetur, voluptatibus
+                        sapiente quas explicabo, similique impedit quam vel architecto ad consequatur dolore incidunt!
+                        Corrupti blanditiis, delectus repudiandae consectetur unde dignissimos mollitia impedit tempore.
+                        Culpa, exercitationem fugit.</p>
+                </div>
+            </div>
+        </section>
+        <br><br>
+        <section id="about">
+            <div class="about">
+                <h1>ABOUT</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, saepe. Esse quia asperiores
+                    quos vitae soluta quibusdam! Placeat rerum veritatis veniam nemo ad, eaque dolore quos enim totam
+                    voluptatibus, dolorem corporis quae quibusdam itaque molestias perferendis nihil quidem eum deserunt
+                    nobis hic nesciunt consequatur, rem autem. Assumenda iure nostrum eligendi quos officiis consequatur
+                    earum reprehenderit. Non reprehenderit eligendi magni, est quibusdam voluptate quaerat. Aliquid
+                    magni perferendis hic ipsam natus, quis ut eum soluta facere veritatis nemo temporibus, porro
+                    ducimus dicta.Non reprehenderit eligendi magni, est quibusdam voluptate quaerat. Aliquid
+                    magni perferendis hic ipsam natusAliquid magni perferendis hic ipsam natus</p>
+            </div>
+        </section>
+        <section id="menu">
+            <div class="menu">
+                <div class="menu-content">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li>
+                            <h1>Lasagne alla Bolognese</h1>
+                            <p>Layers of beef, tomato, and onion bolognese sauce, bechamel sauce, and lasagne pasta
+                                the cheesy top.</p>
+                        </li>
+                        <li>
+                            <h1>Fettuccine al Pomodoro</h1>
+                            <p>Pomodoro simply means “tomato,” and it is the tomato and basil sauce that gives this dish
+                                its iconic fresh taste</p>
+                        </li>
+                        <li>
+                            <h1>Gnocchi di Patate</h1>
+                            <p>Gnocchi can be eaten with most pasta sauces, so there are many exciting gnocchi flavours
+                            </p>
+                        </li>
+                        <li>
+                            <h1>Melanzane alla Parmigiana</h1>
+                            <p>This dish is thick and baked, deeply warming your insides on colder evenings</p>
+                        </li>
+                        <li>
+                            <h1>Pollo alla Cacciatora</h1>
+                            <p>It is then stewed with olive oil, tomatoes, and red wine in a casserole dish and served
+                                piping hot.</p>
+                        </li>
+                        <li>
+                            <h1>Pizza Margherita</h1>
+                            <p>This staple pizza is impossible to not like, connoisseurs to something delectably
+                                Moorish.</p>
+                        </li>
+                        <li>
+                            <h1>Costoletta alla Milanese</h1>
+                            <p>A veal cutlet is coated in breadcrumbs and fried in butter. </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQX856nf2Q5Nl6dfsjmmU9s3aw1H8zR1uVig&s"
+                        alt="" style="width: 400px; height: 600px;">
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        // script.js
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.getElementById('burger');
+            const navLinks = document.getElementById('navLinks');
+
+            burger.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+                burger.classList.toggle('toggle');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
